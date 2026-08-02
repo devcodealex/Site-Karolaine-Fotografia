@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karoles Fotografia | Fotografia Afetiva & Retratos</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Font Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS CSS (Animações de Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Botão Flutuante WhatsApp -->
+    <a href="https://wa.me/555399553742?text=Olá, vim pelo site! Quero mais informações." target="_blank" class="whatsapp-float" aria-label="Contato via WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Header / Navbar -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">Karolaine Machado<span class="dot">.</span></a>
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir Menu">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#ensaios">Tipos de Ensaio</a></li>
+                    <li><a href="#sobre">Quem Sou Eu</a></li>
+                    <li><a href="#como-funciona">Como Funciona</a></li>
+                    <li><a href="#contato" class="btn-nav">Agendar Ensaio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-bg-glow"></div>
+        <div class="container hero-container">
+            <div class="hero-text" data-aos="fade-right">
+                <div class="badge"><i class="fa-solid fa-camera"></i> Fotografia Afetiva & Luz Natural</div>
+                <h1>Karoles Fotografia</h1>
+                <h2>Registrando <span class="typed-text"></span></h2>
+                <p>Eternizando momentos reais, histórias de amor e a beleza de cada fase com sensibilidade, leveza e direção afetiva.</p>
+                <div class="hero-btns">
+                    <a href="#contato" class="btn-primary">Solicitar Orçamento <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#ensaios" class="btn-secondary">Conhecer os Ensaios</a>
+                </div>
+                
+                <!-- Métricas -->
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">+500</span>
+                        <span class="stat-label">Histórias Registradas</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Direção Confortável e Leve</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Container do Slider do Topo -->
+            <div class="hero-image-container" data-aos="fade-left">
+                <div class="image-frame slider-container">
+                    <img src="img/karol1.png" alt="Karolaine Machado" class="main-img slide-img active">
+                    <img src="img/karol2.png" alt="Karolaine Machado" class="main-img slide-img">
+                    <img src="img/karol3.png" alt="Karolaine Machado" class="main-img slide-img">
+
+                    <!-- Indicadores -->
+                    <div class="slider-dots">
+                        <span class="dot-item active" onclick="currentSlide(0)"></span>
+                        <span class="dot-item" onclick="currentSlide(1)"></span>
+                        <span class="dot-item" onclick="currentSlide(2)"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nossos Ensaios (Grid dos 6 Clicáveis) -->
+    <section id="ensaios" class="pillars">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="subtitle">Experiências Exclusivas</span>
+                <h2>Modalidades de Ensaio</h2>
+                <p class="section-hint">Clique em um dos cards para ver fotos da galeria</p>
+                <div class="divider"></div>
+            </div>
+
+            <div class="pillars-grid">
+                <!-- 1. Gestante -->
+                <div class="pillar-box clickable-card" data-category="gestante" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="pillar-icon"><i class="fa-solid fa-person-pregnant"></i></div>
+                    <h3>Gestante & Maternidade</h3>
+                    <p>Celebrando a doce espera da vida com delicadeza, valorizando a silhueta e a emoção desse momento único.</p>
+                    <span class="card-btn-more">Ver Fotos <i class="fa-solid fa-images"></i></span>
+                </div>
+
+                <!-- 2. Externos -->
+                <div class="pillar-box clickable-card" data-category="externo" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="pillar-icon"><i class="fa-solid fa-sun"></i></div>
+                    <h3>Ensaios Externos</h3>
+                    <p>Sessões ao ar livre aproveitando a luz do sol, parques, praias ou locais que contam a sua própria história.</p>
+                    <span class="card-btn-more">Ver Fotos <i class="fa-solid fa-images"></i></span>
+                </div>
+
+                <!-- 3. Individual Feminino -->
+                <div class="pillar-box clickable-card" data-category="feminino" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="pillar-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <h3>Individual Feminino</h3>
+                    <p>Um espaço de reconexão e elevação da autoestima. Retratos sutis, autênticos e cheios de personalidade.</p>
+                    <span class="card-btn-more">Ver Fotos <i class="fa-solid fa-images"></i></span>
+                </div>
+
+                <!-- 4. Casal -->
+                <div class="pillar-box clickable-card" data-category="casal" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="pillar-icon"><i class="fa-solid fa-heart"></i></div>
+                    <h3>Ensaio de Casal</h3>
+                    <p>Registros espontâneos da cumplicidade e do carinho de vocês, sem poses travadas ou engessadas.</p>
+                    <span class="card-btn-more">Ver Fotos <i class="fa-solid fa-images"></i></span>
+                </div>
+
+                <!-- 5. Temático Mensal -->
+                <div class="pillar-box clickable-card" data-category="tematico" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="pillar-icon"><i class="fa-solid fa-calendar-days"></i></div>
+                    <h3>Temático Mensal</h3>
+                    <p>Sessões especiais com cenários e propostas sazonais para acompanhar o crescimento do seu bebê ou datas festivas.</p>
+                    <span class="card-btn-more">Ver Fotos <i class="fa-solid fa-images"></i></span>
+                </div>
+
+                <!-- 6. Pets  -->
+                <div class="pillar-box clickable-card" data-category="pet" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="pillar-icon"><i class="fa-solid fa-paw"></i></div>
+                    <h3>Pets</h3>
+                    <p>Seus companheiros de quatro patas também fazem parte da família! Cliques cheios de diversão e afeto.</p>
+                    <span class="card-btn-more">Ver Fotos <i class="fa-solid fa-images"></i></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal de Galeria (Popup) -->
+    <div class="gallery-modal" id="galleryModal">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose"><i class="fa-solid fa-xmark"></i></button>
+            <h3 id="modalTitle" class="modal-title">Título do Ensaio</h3>
+            
+            <div class="modal-slider">
+                <button class="slider-btn prev-btn" id="modalPrev"><i class="fa-solid fa-chevron-left"></i></button>
+                <div class="modal-image-wrapper">
+                    <img id="modalImage" src="" alt="Foto do Ensaio">
+                </div>
+                <button class="slider-btn next-btn" id="modalNext"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+            
+            <div class="modal-footer">
+                <span id="modalCounter">1 / 3</span>
+                <a href="#contato" class="btn-primary modal-cta-btn" onclick="closeModal()">Quero este Ensaio <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quem Sou Eu (Sobre a Karolaine) -->
+    <section id="sobre" class="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="subtitle">A Fotógrafa</span>
+                <h2>Prazer, Karolaine Machado</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon-box"><i class="fa-solid fa-eye"></i></div>
+                    <div class="card-content">
+                        <h3>Olhar Sensível</h3>
+                        <p>Busco a beleza no simples. Meu objetivo é capturar sentimentos genuínos e detalhes que passariam despercebidos.</p>
+                    </div>
+                </div>
+
+                <div class="about-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon-box"><i class="fa-solid fa-sliders"></i></div>
+                    <div class="card-content">
+                        <h3>Tratamento de Cor Atemporal</h3>
+                        <p>Edição suave com tons quentes e naturais que valorizam a imagem e garantem que suas fotos continuem lindas daqui a 20 anos.</p>
+                    </div>
+                </div>
+
+                <div class="about-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="icon-box"><i class="fa-solid fa-face-smile"></i></div>
+                    <div class="card-content">
+                        <h3>Experiência Leve</h3>
+                        <p>Não se preocupe se "não souber fazer pose". Eu te guio do início ao fim com tranquilidade para você se sentir à vontade.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como Funciona -->
+    <section id="como-funciona" class="steps-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="subtitle">Do Primeiro Contato à Entrega</span>
+                <h2>Como Funciona a Sua Experiência</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="steps-grid">
+                <div class="step-card" data-aos="fade-up" data-aos-delay="100">
+                    <span class="step-num">01</span>
+                    <h3>Planejamento & Guia</h3>
+                    <p>Alinhamos o estilo do ensaio, escolha do local, horários e te envio um guia completo de roupas e combinações.</p>
+                </div>
+
+                <div class="step-card" data-aos="fade-up" data-aos-delay="200">
+                    <span class="step-num">02</span>
+                    <h3>O Dia do Ensaio</h3>
+                    <p>Um momento divertido e descontraído. Vou te direcionando levemente para capturar os melhores ângulos e sorrisos.</p>
+                </div>
+
+                <div class="step-card" data-aos="fade-up" data-aos-delay="300">
+                    <span class="step-num">03</span>
+                    <h3>Seleção das Fotos</h3>
+                    <p>Você recebe uma galeria online privativa para escolher com calma as suas imagens favoritas do ensaio.</p>
+                </div>
+
+                <div class="step-card" data-aos="fade-up" data-aos-delay="400">
+                    <span class="step-num">04</span>
+                    <h3>Entrega Final</h3>
+                    <p>Receba suas fotos tratadas em alta resolução prontas para baixar, compartilhar ou produzir lindos álbuns físicos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato Profissional -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <div class="contact-wrapper" data-aos="fade-up">
+                <div class="contact-info">
+                    <h2>Vamos Guardar Suas Melhores Memórias?</h2>
+                    <p>Entre em contato para consultar datas disponíveis, receber o catálogo completo de valores ou tirar suas dúvidas.</p>
+                    
+                    <div class="contact-details">
+                        <a href="https://instagram.com/karolesmachfotografia" target="_blank" class="contact-item">
+                            <i class="fa-brands fa-instagram"></i>
+                            <div>
+                                <span>Acompanhe no Instagram</span>
+                                <strong>@karolesmachfotografia</strong>
+                            </div>
+                        </a>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <span>E-mail Profissional</span>
+                                <strong>karolainepmachado98@gmail.com</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulário com Formspree -->
+                <form class="contact-form" id="contactForm" action="https://formspree.io/f/xgoggoej" method="POST">
+                    <h3>Solicitar Orçamento</h3>
+                    <div class="input-group">
+                        <input type="text" name="name" id="name" placeholder="Seu Nome Completo" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" name="email" id="email" placeholder="Seu E-mail ou WhatsApp" required>
+                    </div>
+                    <div class="input-group">
+                        <select name="ensaio_tipo" id="ensaio_tipo" required>
+                            <option value="" disabled selected>Selecione o tipo de ensaio...</option>
+                            <option value="Gestante">Gestante & Maternidade</option>
+                            <option value="Externo">Ensaio Externo</option>
+                            <option value="Feminino">Individual Feminino</option>
+                            <option value="Casal">Ensaio de Casal</option>
+                            <option value="Temático">Temático Mensal</option>
+                            <option value="Pet">Pets</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <textarea name="message" id="message" rows="4" placeholder="Alguma data em mente ou detalhe especial?" required></textarea>
+                    </div>
+                    <button type="submit" id="submitBtn" class="btn-primary btn-full">
+                        Enviar Solicitação <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                    <div id="formStatus" style="margin-top: 15px; text-align: center; font-size: 0.95rem; font-weight: 500;"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé Premium -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#" class="logo">Karolaine Machado<span class="dot">.</span></a>
+                <p>Fotografia Afetiva • Gestantes • Retratos • Pets • Família</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Karolaine Machado Fotografia. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts Externos (AOS e Typed.js) -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
