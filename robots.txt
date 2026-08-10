@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://daiscardoso.com.br/sitemap.xml
