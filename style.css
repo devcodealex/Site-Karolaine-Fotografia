@@ -63,12 +63,30 @@ scroll-behavior: smooth;
 }
 
 body {
-background-color: var(--bg-dark);
-color: var(--text-light);
-font-family: var(--font-body);
-line-height: 1.6;
-position: relative;
+    background-color:#071B2E;
+    color: var(--text-light);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    position: relative;
 }
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: -20px;
+    background-image: url('img/textura.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+
+    filter: blur(10px);
+
+    opacity: 0.08;
+    z-index: -2;
+    pointer-events: none;
+}
+
+
 
 
 
